@@ -1,10 +1,10 @@
 # Findex-api-doc
 
 # General API information
-> * The base endpoint is: https://api.findex.pro
-> *  200 The requested action was received and successfully processed by the server.
-> *  400 Bad Request indicates that the request by the client was not processed, as the server could not understand what the client is asking for.
-> *  500 Internal Server Error indicates that the request is valid, but the server is totally confused and the server is asked to serve some unexpected condition.
+ * The base endpoint is: https://api.findex.pro
+ *  200 The requested action was received and successfully processed by the server.
+ *  400 Bad Request indicates that the request by the client was not processed, as the server could not understand what the client is asking for.
+ *  500 Internal Server Error indicates that the request is valid, but the server is totally confused and the server is asked to serve some unexpected condition.
 
 
 
@@ -20,16 +20,16 @@ GET /v1/tokenList
     data:{
         tokenList:[
             {
-                symbol:"EOS",
-                contract:"eosio.token",
-                tokenID:1,
-                precision:10000
+                "symbol":"EOS",
+                "contract":"eosio.token",
+                "tokenID":1,
+                "precision":10000
             },
             {
-                symbol:"ADD",
-                contract:"eosadddddddd",
-                tokenID:2,
-                precision:10000
+                "symbol":"ADD",
+                "contract":"eosadddddddd",
+                "tokenID":2,
+                "precision":10000
             },
             .
             .
@@ -46,12 +46,12 @@ GET /v1/tokenList
     "data":{
         "pairList":[
             {
-                quoteToken:"ADD",
-                baseToken:"EOS",
-                quoteContract:"eosadddddddd",
-                baseContract:"eosio.token",
-                pair:"ADD/EOS",
-                pairID:1
+                "quoteToken":"ADD",
+                "baseToken":"EOS",
+                "quoteContract":"eosadddddddd",
+                "baseContract":"eosio.token",
+                "pair":"ADD/EOS",
+                "pairID":1
             },
             .
             .
@@ -69,7 +69,7 @@ GET /v1/pair
 #### Parameters:
 | Name        | Type   | Description |
 | ----------- | ------ | ----------- |
-| pairName    | STRING | string name of token adjacent by '_', like dice_eos |
+| pairName    | STRING | String name of tokens adjacent by '_', like dice_eos |
 
 #### Response:
 ```json
@@ -84,8 +84,8 @@ GET /v1/pair
                         "baseContract":"eosio.token",
                         "pair":"DICE/EOS",
                         "pairID":15
-                    }
-                    //the list may contains more elements if there are pairs with the same name.
+                    },
+                    [comment]: <> (The list may contains more elements if there are pairs with the same name.)
                 ]
     }
 }
