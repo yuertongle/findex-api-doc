@@ -13,12 +13,12 @@
 ```javascript
 GET /v1/tokenList
 ```
-#### Response:
+#### Response(tokenList contains multiple elements):
 ```json
 {
-    code:200,
-    data:{
-        tokenList:[
+    "code":200,
+    "data":{
+        "tokenList":[
             {
                 "symbol":"EOS",
                 "contract":"eosio.token",
@@ -30,16 +30,13 @@ GET /v1/tokenList
                 "contract":"eosadddddddd",
                 "tokenID":2,
                 "precision":10000
-            },
-            .
-            .
-            .
+            }
         ]    
     }
 }
 ```
 ### 2. Get token pair list on Findex
-#### Response:
+#### Response(pairList contains multiple elements):
 ```json
 {
     "code":200,
@@ -52,10 +49,7 @@ GET /v1/tokenList
                 "baseContract":"eosio.token",
                 "pair":"ADD/EOS",
                 "pairID":1
-            },
-            .
-            .
-            .
+            }
         ]
     }
 }
@@ -71,7 +65,7 @@ GET /v1/pair
 | ----------- | ------ | ----------- |
 | pairName    | STRING | String name of tokens adjacent by '_', like dice_eos |
 
-#### Response:
+#### Response(The list may contains more elements if there are several pairs with the same name):
 ```json
 {
     "code":200,
@@ -84,8 +78,7 @@ GET /v1/pair
                         "baseContract":"eosio.token",
                         "pair":"DICE/EOS",
                         "pairID":15
-                    },
-                    [comment]: <> (The list may contains more elements if there are pairs with the same name.)
+                    }
                 ]
     }
 }
