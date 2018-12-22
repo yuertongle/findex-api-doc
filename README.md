@@ -37,6 +37,9 @@ GET /v1/tokenList
 }
 ```
 ### 2. Get token pair list on Findex
+```javascript
+GET /v1/pairList
+```
 #### Response(pairList contains multiple elements):
 ```json
 {
