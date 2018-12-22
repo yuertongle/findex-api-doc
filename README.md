@@ -44,12 +44,12 @@ GET /v1/tokenList
     "data":{
         "pairList":[
             {
-                "pairID":1
+                "pairID":1,
                 "pair":"ADD/EOS",
                 "quoteToken":"ADD",
                 "quoteContract":"eosadddddddd",
                 "baseToken":"EOS",
-                "baseContract":"eosio.token",
+                "baseContract":"eosio.token"
             },
             {
                 "pairID":2,
