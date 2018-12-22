@@ -2,9 +2,10 @@
 
 # General API information
  * The base endpoint is: https://api.findex.pro
- *  200 The requested action was received and successfully processed by the server.
- *  400 Bad Request indicates that the request by the client was not processed, as the server could not understand what the client is asking for.
- *  500 Internal Server Error indicates that the request is valid, but the server is totally confused and the server is asked to serve some unexpected condition.
+ * 200 The requested action was received and successfully processed by the server.
+ * 204 No Content represents the request is successfully processed, but has not returned any content.
+ * 400 Bad Request indicates that the request by the client was not processed, as the server could not understand what the client is asking for.
+ * 500 Internal Server Error indicates that the request is valid, but the server is totally confused and the server is asked to serve some unexpected condition.
 
 
 
@@ -20,9 +21,9 @@ GET /v1/tokenList
     "data":{
         "tokenList":[
             {
+                "tokenID":1,
                 "symbol":"EOS",
                 "contract":"eosio.token",
-                "tokenID":1,
                 "precision":10000
             },
             {
@@ -43,12 +44,12 @@ GET /v1/tokenList
     "data":{
         "pairList":[
             {
-                "quoteToken":"ADD",
-                "baseToken":"EOS",
-                "quoteContract":"eosadddddddd",
-                "baseContract":"eosio.token",
-                "pair":"ADD/EOS",
                 "pairID":1
+                "pair":"ADD/EOS",
+                "quoteToken":"ADD",
+                "quoteContract":"eosadddddddd",
+                "baseToken":"EOS",
+                "baseContract":"eosio.token",
             }
         ]
     }
