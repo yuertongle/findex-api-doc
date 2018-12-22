@@ -10,7 +10,7 @@
 
 
 # General endpoints
-### 1. Get Token list on Findex
+### 1. Get token list on Findex
 ```javascript
 GET /v1/tokenList
 ```
