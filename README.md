@@ -50,6 +50,14 @@ GET /v1/tokenList
                 "quoteContract":"eosadddddddd",
                 "baseToken":"EOS",
                 "baseContract":"eosio.token",
+            },
+            {
+                "pairID":2,
+                "pair":"ATD/EOS",
+                "quoteToken":"ATD",
+                "quoteContract":"eosatidiumio",
+                "baseToken":"EOS",
+                "baseContract":"eosio.token"
             }
         ]
     }
