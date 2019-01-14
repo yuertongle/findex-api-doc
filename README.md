@@ -127,7 +127,7 @@ GET /v1/ticker
 #### Parameters:
 | Name        | Type |       Description                |
 | ----------- | -----| ---------------------------------------------    |
-| symbol      |STRING| {quoteContract}_{quoteTokenName}-{baseContract}_{baseTokenName} (eg:eosiomeetone_MEETONE-eosio.token_EOS) |
+| symbol      |STRING| {quoteContract} _ {quoteTokenName}-{baseContract} _ {baseTokenName} (eg:eosiomeetone_MEETONE-eosio.token_EOS) |
 
 #### Response:
 ```json
