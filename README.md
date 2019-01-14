@@ -113,7 +113,30 @@ GET /v1/pairPrice
   "code":200,
   "data": {
       "price":0.000055,
-      "pair_id":"14"
+      "change":-0.0949,
+      "pair_id":"14",
+  }
+}
+```
+
+
+### 5. Get token pair price on Findex using token contract and token name
+```javascript
+GET /v1/ticker
+```
+#### Parameters:
+| Name        | Type |       Description                |
+| ----------- | -----| ---------------------------------------------    |
+| symbol      |STRING| {quoteContract}_{quoteTokenName}-{baseContract}_{baseTokenName} (eg:eosiomeetone_MEETONE-eosio.token_EOS) |
+
+#### Response:
+```json
+{
+  "code":200,
+  "data": {
+      "price":0.000055,
+      "change":-0.0949,
+      "pair_id":"9",
   }
 }
 ```
