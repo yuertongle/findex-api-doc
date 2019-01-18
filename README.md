@@ -1,7 +1,8 @@
 # Findex-api-doc
+### Important, this doc is for API to access Findex trading info on EOS mainnet and BOS side-chain.
 
 # General API information
- * The base endpoint is: https://api.findex.pro
+ * The base endpoint for Findex on EOS mainnet is: https://api.findex.pro, for Findex on BOS side-chain is: https://api.findex.pro/bos.
  * 200 The requested action was received and successfully processed by the server.
  * 204 No Content represents the request is successfully processed, but has not returned any content.
  * 400 Bad Request indicates that the request by the client was not processed, as the server could not understand what the client is asking for.
